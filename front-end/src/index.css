@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Golder Yellow #feb80a */
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Outfit", serif;
+}
+input{
+
+    outline: none;
+}
+
+.form-input{
+    @apply border border-gray-300 rounded-xl p-2 w-full pe-4;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    display: none; 
+  }
+
+  .card-overlay{
+    position: absolute;
+   content: '';
+   bottom: 0;
+   width: 100%;
+   height: 35px;
+   left: 0;
+   background: linear-gradient(180deg, rgba(96, 96, 96, 0.367) 23%, rgba(0,0,0,1) 88%);
+  }
